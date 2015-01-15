@@ -1,0 +1,2 @@
+# MSP430G_V-BOSM
+This is the very first project in my first repository. I started creating a vehicle based on stepper motors (V-BOSM acronym). I do not know exactly at this moment what are project objectives. It probably will be changing along the time. I treat it as a fun. I would like to keep my project in the oranized shape and under version controlled. Moreover I would appreciate any feedback I could get from the GitHub comunity.
