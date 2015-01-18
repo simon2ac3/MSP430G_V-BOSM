@@ -4,6 +4,7 @@
 
 #define LED0 BIT0
 #define LED1 BIT6
+#define BUTTON BIT3
 
 // Stepper motors configuration
 #define MOTOR1_A BIT0
@@ -12,6 +13,7 @@
 void init();
 void initLEDS();
 void initClock();
+void initButton(void);
 
 Params* Motor1;
 
@@ -22,7 +24,7 @@ int main()
   __enable_interrupt();
   init();
 
-  while( 1 )
+  while( !(P1IFG && BUTTON) )
   {
     // TO DO: REMOVE THIS LATER
     int i;
@@ -48,6 +50,7 @@ void init()
 {
   initLEDS();
   initClock();
+  initButton();
   Motor1 = InitStepper(10, CW, MOTOR1_A, MOTOR1_B);
 }
 
@@ -63,5 +66,18 @@ void initClock()
   BCSCTL1 = CALBC1_1MHZ;                        // Set range
   DCOCTL = CALDCO_1MHZ;
   BCSCTL2 &= ~(DIVS_3);                         // SMCLK = DCO / 8 = 1MHz  
-
 }
+
+void initButton(void)
+{
+  P1DIR &= ~BUTTON;  // direction, set 0 (input)
+  P1REN |= BUTTON;   // set 1, resistor pull-up/down enabled
+  P1OUT |= BUTTON;   // set 1, resistor pulled-up
+  P1IES &= ~BUTTON;  // set 1 falling edge triggered
+  P1IFG &= ~BUTTON;  // set 0, int. flag reg.
+  P1IE |= BUTTON;    // set 1, interrupts enable
+}
+
+#pragma vector=PORT1_VECTOR
+__interrupt void PORT1_ISR(void)
+{}

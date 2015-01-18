@@ -4,7 +4,17 @@
 #define POUT P1OUT
 #define PDIR P1DIR
 
+int initialized = 0;
 Params params = { .speed = 0, .direction = 0, .controlA = 0x0000u, .controlB = 0x0000u };
+
+void initTimer(void)
+ {
+  CCTL0 = CCIE;
+  //TO DO: connect this value with a speed.
+  CCR0 = 0X0FFFF;
+  TACTL = TASSEL_2 + ID_3 + MC_3;
+  initialized = 1;
+ }
 
 Params* InitStepper ( int _speed, int _direction, uint _controlA, uint _controlB )
 {
@@ -16,6 +26,9 @@ Params* InitStepper ( int _speed, int _direction, uint _controlA, uint _controlB
 
   PDIR |= _controlA + _controlB;        //output
   POUT |= _controlA + _controlB;        //set 0
+  
+  if ( !initialized )
+    initTimer();
   
   return &params;
 }
@@ -77,3 +90,7 @@ void SetDirection( Params* paramsPtr, int _direction)
 {
   paramsPtr->direction = _direction;
 }
+
+#pragma vector=TIMER0_A0_VECTOR
+__interrupt void Timer_A (void)
+{}

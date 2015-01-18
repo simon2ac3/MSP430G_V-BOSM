@@ -12,12 +12,12 @@
           
           
           
-        <Column0>124</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+        <Column0>248</Column0><Column1>0</Column1><Column2>27</Column2><Column3>0</Column3></ColumnWidths>
       </Workspace>
-    <Build><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>915</ColumnWidth1><ColumnWidth2>244</ColumnWidth2><ColumnWidth3>61</ColumnWidth3></Build></Static>
+    <Build><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>915</ColumnWidth1><ColumnWidth2>244</ColumnWidth2><ColumnWidth3>61</ColumnWidth3></Build><TerminalIO/></Static>
     <Windows>
       
-    <Wnd1>
+    <Wnd0>
         <Tabs>
           <Tab>
             <Identity>TabID-27432-18977</Identity>
@@ -25,24 +25,24 @@
             <Factory>Workspace</Factory>
             <Session>
               
-            <NodeDict><ExpandedNode>V-BOSM</ExpandedNode><ExpandedNode>V-BOSM/Output</ExpandedNode><ExpandedNode>V-BOSM/Stepper.c</ExpandedNode><ExpandedNode>V-BOSM/main.c</ExpandedNode></NodeDict></Session>
+            <NodeDict><ExpandedNode>V-BOSM</ExpandedNode><ExpandedNode>V-BOSM/Output</ExpandedNode><ExpandedNode>V-BOSM/Output/V-BOSM.d43</ExpandedNode></NodeDict></Session>
           </Tab>
         </Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd1><Wnd0><Tabs><Tab><Identity>TabID-4221-21459</Identity><TabName>Build</TabName><Factory>Build</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd0></Windows>
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1><Tabs><Tab><Identity>TabID-4221-21459</Identity><TabName>Build</TabName><Factory>Build</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd1></Windows>
     <Editor>
       
       
       
       
-    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Program Files (x86)\IAR Systems\Embedded Workbench 6.0 Kickstart\430\doc\infocenter\index.ENU.html</Filename></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>27</YPos><SelStart>209</SelStart><SelEnd>209</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Stepper.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Stepper.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>123</SelStart><SelEnd>123</SelEnd></Tab><ActiveTab>3</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Program Files (x86)\IAR Systems\Embedded Workbench 6.0 Kickstart\430\doc\infocenter\index.ENU.html</Filename></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>42</YPos><SelStart>844</SelStart><SelEnd>844</SelEnd></Tab><ActiveTab>1</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Stepper.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>204</SelStart><SelEnd>215</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Stepper.c</Filename><XPos>0</XPos><YPos>78</YPos><SelStart>2235</SelStart><SelEnd>2235</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Program Files (x86)\IAR Systems\Embedded Workbench 6.0 Kickstart\430\config\lnk430G2553.xcl</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
     <Positions>
       
       
       
       
       
-    <Top><Row0><Sizes><Toolbar-010b3410><key>iaridepm.enu1</key></Toolbar-010b3410></Sizes></Row0></Top><Left><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>485</Bottom><Right>198</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>156250</sizeHorzCX><sizeHorzCY>274725</sizeHorzCY><sizeVertCX>156250</sizeVertCX><sizeVertCY>668956</sizeVertCY></Rect></Wnd1></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>198</Bottom><Right>1282</Right><x>-2</x><y>-2</y><xscreen>1284</xscreen><yscreen>200</yscreen><sizeHorzCX>1003125</sizeHorzCX><sizeHorzCY>274725</sizeHorzCY><sizeVertCX>156250</sizeVertCX><sizeVertCY>274725</sizeVertCY></Rect></Wnd0></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+    <Top><Row0><Sizes><Toolbar-00ce79a0><key>iaridepm.enu1</key></Toolbar-00ce79a0></Sizes></Row0></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>485</Bottom><Right>295</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>156250</sizeHorzCX><sizeHorzCY>274725</sizeHorzCY><sizeVertCX>232031</sizeVertCX><sizeVertCY>668956</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>198</Bottom><Right>1282</Right><x>-2</x><y>-2</y><xscreen>1284</xscreen><yscreen>200</yscreen><sizeHorzCX>1003125</sizeHorzCX><sizeHorzCY>274725</sizeHorzCY><sizeVertCX>156250</sizeVertCX><sizeVertCY>274725</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
   </Desktop>
 </Workspace>
 
