@@ -67,8 +67,9 @@ void ProcessCommands ( Params* _motor1, Params* _motor2 )
   {
      CheckStateAndStep ( _motor1 );
      CheckStateAndStep ( _motor2 );       
+     tick = FALSE;
   }
-  tick = FALSE;
+  
 }
   
 //void Delay( int speed )

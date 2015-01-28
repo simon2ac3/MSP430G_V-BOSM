@@ -60,8 +60,8 @@ void init()
   initLEDS();
   initClock();
   initButton();
-  //motor1 = InitStepper(30, CCW, MOTOR1_A, MOTOR1_B);
-  motor2 = InitStepper(5, CW, MOTOR2_A, MOTOR2_B);
+  motor1 = InitStepper(30, CCW, MOTOR1_A, MOTOR1_B);
+  //motor2 = InitStepper(5, CW, MOTOR2_A, MOTOR2_B);
 }
 
 void initLEDS()
