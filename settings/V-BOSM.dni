@@ -30,16 +30,20 @@ ActionState=1
 Enabled=0
 ShowSource=1
 [State Storage]
-Control Register=-1
+Control Register=49492
 [Sequencer]
-Control Register=-1
-NextState0=-1
-NextState1=-1
+Control Register=49492
+NextState0=49492
+NextState1=49492
 [Action Register]
-Break=-1
-State Storage=-1
+Break=3
+State Storage=1
 [DebugChecksum]
-Checksum=1047853332
+Checksum=882713167
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -47,10 +51,6 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
-[CallStack]
-ShowArgs=0
-[Disassembly]
-MixedMode=1
 [CallStackLog]
 Enabled=0
 [DriverProfiling]
@@ -60,7 +60,8 @@ Graph=0
 Symbiont=0
 Exclusions=
 [Breakpoints]
-Count=0
+Bp0=_ "STD_CODE" "{$PROJ_DIR$\Stepper.c}.110.11" 1 0 0 0 "" 0 ""
+Count=1
 [FET]
 Clock mode=38
 Extended Clock mode=-1

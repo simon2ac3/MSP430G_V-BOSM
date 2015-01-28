@@ -10,12 +10,18 @@
 #define MOTOR1_A BIT0
 #define MOTOR1_B BIT6
 
+#define MOTOR2_A BIT0
+#define MOTOR2_B BIT6
+
+// Declarations
 void init();
 void initLEDS();
 void initClock();
 void initButton(void);
 
-Params* Motor1;
+// Globals
+Params* motor1;
+Params* motor2;
 
 int main()
 {
@@ -24,34 +30,38 @@ int main()
   __enable_interrupt();
   init();
 
-  while( !(P1IFG && BUTTON) )
+  while( (P1IFG && BUTTON) )
   {
-    // TO DO: REMOVE THIS LATER
-    int i;
-    for ( i = 0 ; i < 100 ; i++ )
-    {
-      Step( Motor1 );
-    }
+    ProcessCommands( motor1, motor2 );
     
-    SetDirection ( Motor1, CCW );
-    
-    for ( i = 0 ; i < 100 ; i++ )
-    {
-      Step( Motor1 );
-    }
-    
-    SetDirection ( Motor1, CW );
+//    // TO DO: REMOVE THIS LATER
+//    int i;
+//    for ( i = 0 ; i < 100 ; i++ )
+//    {
+//      Step( motor1 );
+//    }
+//    
+//    SetDirection ( motor1, CCW );
+//    
+//    for ( i = 0 ; i < 100 ; i++ )
+//    {
+//      Step( motor1 );
+//    }
+//    
+//    SetDirection ( motor1, CW );
   }
   
   return 0;
 }
 
+// Definitions
 void init()
 {
   initLEDS();
   initClock();
   initButton();
-  Motor1 = InitStepper(10, CW, MOTOR1_A, MOTOR1_B);
+  //motor1 = InitStepper(30, CCW, MOTOR1_A, MOTOR1_B);
+  motor2 = InitStepper(5, CW, MOTOR2_A, MOTOR2_B);
 }
 
 void initLEDS()
